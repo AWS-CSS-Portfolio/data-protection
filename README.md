@@ -48,8 +48,6 @@ This lab implements **Domain 5: Data Protection** from the AWS Security Specialt
 
 ## Diagram
 
-Flow: **User → S3 (Default KMS Encryption + TLS-Only Policy) → RDS (CMK Encryption)**  
-
 ![Domain 5 Architecture](diagram.png)  
 
 ---
