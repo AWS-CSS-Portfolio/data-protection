@@ -1,0 +1,15 @@
+{
+  "DBInstanceIdentifier": "dp-lab-db",
+  "Engine": "mysql",
+  "EngineVersion": "8.4.6",
+  "DBInstanceClass": "db.t3.micro",
+  "AllocatedStorage": "20 GiB",
+  "StorageType": "gp2",
+  "MasterUsername": "admin",
+  "StorageEncrypted": true,
+  "KmsKeyId": "arn:aws:kms:us-east-1:xxxxxxxxxxxx:key/46d4dd46-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+  "MultiAZ": false,
+  "PubliclyAccessible": false,
+  "VpcId": "vpc-xxxxxxx",
+  "AvailabilityZone": "us-east-1a"
+}
