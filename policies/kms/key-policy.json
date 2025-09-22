@@ -1,0 +1,45 @@
+{
+  "Version": "2012-10-17",
+  "Id": "dp-lab-key-policy",
+  "Statement": [
+    {
+      "Sid": "AllowKeyAdministrators",
+      "Effect": "Allow",
+      "Principal": {
+        "AWS": "arn:aws:iam::xxxxxxxxxxxx:user/admin-user"
+      },
+      "Action": "kms:*",
+      "Resource": "*"
+    },
+    {
+      "Sid": "AllowS3UseOfTheKey",
+      "Effect": "Allow",
+      "Principal": {
+        "AWS": "arn:aws:iam::xxxxxxxxxxxx:role/S3AccessRole"
+      },
+      "Action": [
+        "kms:Encrypt",
+        "kms:Decrypt",
+        "kms:ReEncrypt*",
+        "kms:GenerateDataKey*",
+        "kms:DescribeKey"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "AllowRDSUseOfTheKey",
+      "Effect": "Allow",
+      "Principal": {
+        "AWS": "arn:aws:iam::xxxxxxxxxxxx:role/aws-service-role/rds.amazonaws.com/AWSServiceRoleForRDS"
+      },
+      "Action": [
+        "kms:Encrypt",
+        "kms:Decrypt",
+        "kms:ReEncrypt*",
+        "kms:GenerateDataKey*",
+        "kms:DescribeKey"
+      ],
+      "Resource": "*"
+    }
+  ]
+}
