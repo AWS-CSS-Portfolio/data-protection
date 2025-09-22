@@ -22,7 +22,6 @@ Built and validated encryption at rest and in transit in AWS using **KMS CMKs, S
 - [Screenshots](#screenshots)  
 - [Lessons Learned](#lessons-learned)  
 - [References](#references)  
-- [Cleanup](#cleanup)  
 - [Contact](#contact)  
 
 ---
